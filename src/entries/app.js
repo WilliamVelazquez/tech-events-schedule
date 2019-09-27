@@ -3,6 +3,8 @@ import React from "react";
 import { render } from "react-dom";
 import "babel-polyfill";
 
+import Home from '../containers/Home';
+
 const container = document.getElementById("app");
 
-render(<h1>Tech Events Schedule</h1>, container);
+render(<Home />, container);
