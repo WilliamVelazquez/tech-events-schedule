@@ -18,7 +18,7 @@ module.exports = (env) => {
     }),
     new HtmlWebpackPlugin({
       title: APP_TITLE,
-      filename: './index.html',
+      filename: '../index.html',
       template: 'public/index.html',
       favicon: './public/favicon.ico'
     })
@@ -53,7 +53,7 @@ module.exports = (env) => {
     output: {
       path: (env.NODE_ENV === 'production') ? path.resolve(__dirname, './dist/') : path.resolve(__dirname, 'dist'),
       filename: 'js/[name].[hash].js',
-      publicPath: (env.NODE_ENV === 'production') ? './' : './dist/',
+      publicPath: (env.NODE_ENV === 'production') ? './dist' : './dist/',
       chunkFilename: 'js/[id].[chunkhash].js',
     },
     devServer: {
