@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+import Header from '../components/Header';
+
 class Home extends Component {
   render(){
     return (
-      <h1>Tech Events Schedule</h1>
+      <Header />
     );
   }
 }

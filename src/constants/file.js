@@ -1,0 +1,1 @@
+export const LOGO = require("../assets/static/logo.png");

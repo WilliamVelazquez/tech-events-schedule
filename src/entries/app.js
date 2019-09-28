@@ -5,6 +5,8 @@ import "babel-polyfill";
 
 import Home from '../containers/Home';
 
+import '../assets/styles/app.css';
+
 const container = document.getElementById("app");
 
 render(<Home />, container);
